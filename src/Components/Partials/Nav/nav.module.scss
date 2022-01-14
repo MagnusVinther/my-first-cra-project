@@ -1,0 +1,52 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+    background-color: #fff;
+    
+    
+    ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            display: flex;
+            background-color: rgb(49, 141, 106);
+            height: 100%;
+            width: 100%;
+            // margin-left: -4.5%;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: rgb(18, 56, 56);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            
+            
+            
+            a {
+                color: black;
+                font-size: 18px;
+                
+                &:hover {
+                    text-decoration: underline black;
+                }
+            }
+        }
+    }
+}
+
+.navMain {
+    background-color: rgb(49, 141, 106);
+}
+
+.footerNav {
+    width: 100%;
+}

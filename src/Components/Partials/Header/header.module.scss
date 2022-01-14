@@ -1,0 +1,18 @@
+$tealdark: rgba(6, 129, 123, 0.877);
+
+
+h1 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerMain {
+    border-bottom: black 2px solid;
+    background-color: $tealdark;
+    // padding-bottom: 1em;
+    // margin-bottom: 1em;
+
+    h1 {
+        padding: 1%;
+    }
+}

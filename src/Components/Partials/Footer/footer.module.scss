@@ -1,0 +1,46 @@
+$tealdark: rgba(6, 129, 123, 0.877);
+
+footer {
+    height: 100%;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 2;
+    }
+
+}
+
+.footerMain {
+    width: 100%;
+    height: 100%;
+    background-color: $tealdark;
+}
+
+.footerNav {
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: $tealdark;
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        background-color: $tealdark;
+
+
+        li {
+            background-color: $tealdark;
+
+            height: 100%;
+            width: 100%;
+            
+        }
+    }
+}
+

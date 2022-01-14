@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Footer } from './Components/Partials/Footer/footer.js'
+import { FooterNav } from './Components/Partials/Footer/footer.js'
+import { Header } from './Components/Partials/Header/header.js'
+import { Main } from './Components/Partials/Main/main.js'
+import { Nav } from './Components/Partials/Nav/nav.js'
+import { navArr } from './Components/Partials/Nav/nav.js'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div>
+        <Header pagetitle="My First React App Header Title" />
+      </div>
+
+      <div className="centerContainer">
+        <Nav data={navArr}/>
+        <Main />
+      </div>
+
+      <div className ="footerContainer">
+        <Footer />
+        <FooterNav data={navArr}/>
+      </div>
+      
     </div>
   );
 }
