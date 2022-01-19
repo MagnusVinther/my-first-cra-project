@@ -4,9 +4,15 @@ import { FooterNav } from './Components/Partials/Footer/footer.js'
 import { Header } from './Components/Partials/Header/header.js'
 import { Main } from './Components/Partials/Main/main.js'
 import { Nav } from './Components/Partials/Nav/nav.js'
-import { navArr } from './Components/Partials/Nav/nav.js'
 
-
+export const navArr = [
+  {name: 'Forside', path: '/'},
+  {name: 'Produkter', path: '/produkter'},
+  {name: 'Om os', path: '/about'},
+  {name: 'Ledige stillinger', path: '/jobs'},
+  {name: 'Kontakt os', path: '/contact'}
+  
+]
 
 function App() {
   return (

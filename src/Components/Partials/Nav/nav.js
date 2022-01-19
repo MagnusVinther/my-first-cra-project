@@ -2,23 +2,16 @@ import styles from './nav.module.scss'
 
 
 
-export const navArr = [
-    'Forside',
-    'Produkter',
-    'Om os',
-    'Ledige stillinger',
-    'Kontakt os'
-]
 
-export const Nav = (props) => {
+
+export const Nav = props => {
+  console.log(props);
     return (
         <nav className={styles.navMain}>
             <ul>
-            {props.data.map(navArr => {
+            {props && props.data && props.data.map((value, index) => {
                 return (
-                  <li>
-                    {navArr}
-                  </li>
+                  <li key={index}><a href={value.path}>{value.name}</a></li>
                 )
               })}
             </ul>

@@ -12,13 +12,14 @@
   justify-content: center;
   border: black solid 2px;
   background-color: rgb(109, 138, 106);
-  height: 95vh;
+  height: 100%;
   width: 90vw;
   margin: 1% auto;
 }
 
 body {
   background-color: rgb(48, 66, 34);
+  height: 90vh;
 }
 
 .centerContainer {
@@ -29,9 +30,9 @@ body {
 }
 
 .footerContainer {
-  height: 6.4vh;
+  height: 100%;
   display: grid;
-  grid-template-rows: 100% 100%;
+  grid-template-rows: 1fr 1fr;
   background-color: rgba(6, 129, 123, 0.877);
 
 }
